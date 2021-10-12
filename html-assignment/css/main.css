@@ -3,26 +3,34 @@ body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
     font-size: 18px;
 }
+/*Change the header and footer background*/
 header,footer{
     background-color: rgb(74, 104, 74);
 }
+/*Color of the H1*/
 .site-title {
     color:rgb(111, 180, 137);
 }
+/*Change the image border*/
 #my-image {
     box-shadow: 0px 0px 2px 1px black;
 }
+/*Change the style type of the lists*/
 .bullets {
     list-style-type: square;
 }
+/*Change the background color of the odd*/
 li:nth-child(odd){
     background: rgb(111, 180, 137);
   }
+/*Change the style of the links*/
 a {
     text-decoration: none;
     background-color: rgba(11, 44, 11, 0.753);
     color: rgb(111, 180, 137);
+    border: 2px solid rgb(1, 17, 11);
 }
+/*Adds hover of the links*/
 a:hover {
     background-color: rgb(1, 17, 11);
 }
