@@ -7,8 +7,11 @@ header,footer{
     background-color: rgb(74, 104, 74);
 }
 .site-title {
-    color:rgb(55, 95, 70);
+    color:rgb(111, 180, 137);
 }
-button{
-    type:square;
+#my-image {
+    box-shadow: 0px 0px 2px 1px black;
+}
+.bullets {
+    list-style-type: square;
 }
