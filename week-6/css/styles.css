@@ -1,3 +1,7 @@
+header p{
+    font-size: 5rem;
+    margin: 10em;
+}
 body {
     font-family: Verdana, sans-serif;
     font-size: 20px;
