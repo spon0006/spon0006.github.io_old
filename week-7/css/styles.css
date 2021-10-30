@@ -1,9 +1,62 @@
-.box{
+html{
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after{
+    box-sizing: inherit;
+  }
+/*
+  nav {
+      float: center;
+  }
+*/
+  nav ul li{
+      display: inline-block;
+      width: 200px;
+  }
+  
+  .box{
     width: 200px;
     background-color: #369;
     color: #fff;
     /* Introduce box model*/
-    padding: 10px;
-    border: 5px solid #900;
-    margin: 10px;
+    padding: 10px;/* 20px total*/
+    border: 5px solid #900;/* 10px toal*/
+    margin: 10px; /*20px total*/
+    /*float boxes beside each other*/
+    float: left;
+}
+/* center a box level element
+.box1{
+    margin: 0 auto;
+}
+*/
+/* NE clockwise?*/
+
+.box1 {
+    box-sizing: content-box;
+}
+.box2 {
+    box-sizing: border-box;
+}
+.clear{
+    clear: left;
+}
+
+.stage{
+    height: 500px;
+    background-color: #aaa;
+}
+.prop {
+    height: 100px;
+    width: 100px;
+    background-color: cyan;
+    /* add positioning values
+    position: relative;
+    top: 100px;
+    left: 10px;*/
+    position: absolute;
+    bottom: 0px;
+
 }
