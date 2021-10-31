@@ -1,0 +1,15 @@
+header{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 35px;
+    color: #aad4cf;
+    background-image: url(../img/lone-starfish-wide.jpg);
+    background-repeat: no-repeat;
+    background-position: over;
+    background-size: over;
+
+}
+/*Primary Colour: #aad4cf*/
+.nav{
+    text-align: center;
+  
+}
