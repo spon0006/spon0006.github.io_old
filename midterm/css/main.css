@@ -1,15 +1,143 @@
+/* html config */
+html{
+    margin:0px 15%;
+    background-color:#aad4cf;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+/* header config */
 header{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 35px;
-    color: #aad4cf;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-style: bold;
+    text-align: center;
     background-image: url(../img/lone-starfish-wide.jpg);
     background-repeat: no-repeat;
-    background-position: over;
-    background-size: over;
+    background-size: cover;
+    background-position-x: 50%;
+    background-position-y:  100%;
+    min-width: 100%;
+    min-height: 300px;
+}
+
+/* text-header */
+#home {
+    position: relative;
+    top: 180px;
+}
+
+/* text-header-end */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(204,255,255);
 
 }
-/*Primary Colour: #aad4cf*/
-.nav{
-    text-align: center;
-  
+
+/* h1 config */
+h1{
+    color: white;
 }
+
+/* h2 confi */
+h2{
+    color: black;
+}
+
+/* navbar */
+nav{
+    text-align: center;  
+} 
+
+/* nav position */
+nav ul {
+    top: -15px;
+    position: relative;
+    list-style: none;
+    display: inline-flex;
+    height: 40px;
+}
+
+/* nav config */
+nav ul li {
+    padding-top: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+/* nav border */
+nav ul li:nth-child(2) {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+/* Nav color */
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+/* navbar-end */
+
+
+/* img-star-fish */
+.star-img {
+    float: left;
+    margin-right: 15px;
+}
+/* img-star-fish */
+
+/* Section config */
+section {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.section-life {
+    margin-top: -25px;
+}
+/* section config-end */
+
+/* indented list */
+ul.facts {
+    margin-left: -20px;
+}
+/* indented list end */
+
+/* footer config */
+.footer{
+    text-align: right;
+    padding-top: 25px;
+    padding-right: 15px;
+    padding-bottom: 25px;
+}
+/* footer config-end */
+
+/* form confi */
+.form-frame{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.text-field{
+    width: 100%;
+    border: 0px;
+    height: 25px;
+}
+
+.text-area{
+    border: 1px solid lightgrey;
+    height: 100px;
+}
+
+.submit{
+    margin-top: 15px;
+    border: 1px solid black;
+    background-color: rgb(204,255,255);
+    padding:10px;
+}
+
+.label{
+    display: block;
+    margin-bottom: 10px;
+}
+/* form config-end */

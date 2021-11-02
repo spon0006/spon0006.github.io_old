@@ -8,18 +8,23 @@
     <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
+    <!-- Adds header -->
     <header>
-        <h1 id="home">Lone Star</h1>
+        <h1 id="home">Lone Starfish</h1>
     </header>
+    <!-- Adds nav bar -->
     <nav>
-        <li><a href="#home">HOME</a></li>
-        <li><a href="#story">STORY</a></li>
-        <li><a href="#contact">CONTACT</a></li>
+        <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#story">STORY</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
     </nav>
-    <section>
+    <!-- Adds section 1 -->
+    <section class="section-life">
         <h2 id="story">Life of a Starfish</h2>
-        <img src="../midterm/img/lone-starfish.jpg" alt="Image of a Starfishimage of a beige starfish with 
-            lots of black spots all over it, positioned on a blue surface with beach sand texture" title="Starfish" width="175", height="175"/>
+        <img class="star-img" src="../midterm/img/lone-starfish.jpg" alt="Image of a Starfishimage of a beige starfish with 
+            lots of black spots all over it, positioned on a blue surface with beach sand texture" title="Starfish" width="175" height="175"/>
         <article>
             <p>Swallower catla Black angelfish grunter striped bass scissor-tail rasbora; 
                 slender mola. Snapper catalufa silver driftfish, kaluga lungfish boga greeneye, 
@@ -41,10 +46,12 @@
             </p>
         </article>
     </section>
+    <!-- Adds section 2 -->
     <section>
         <h2>Facts About Starfish</h2>
         <article>
-            <ul>
+            <!-- Adds unordered list -->
+            <ul class="facts">
                 <li>Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy.</li> 
                 <li>Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.</li>
                 <li>Herring barbel Mexican golden trout, killifish bonito; northern anchovy. </li>
@@ -52,38 +59,42 @@
             </ul>
         </article>
     </section>
-    <fieldset>
-        <section id="contact">
+    <!-- Adds section 3 -->
+    <section id="contact">
+        <h2>Contact to learn more</h2>
+        <!-- Adds border to form -->
+        <fieldset>
+            <!-- Adds form -->
             <form action="index.html"method="post">
-                <label for="name">Your Name</label>
-                <input id="name" type="text" required>
-            </form>
-            <form action="index.html" method="post">
-                <label for="email">Your Email</label>
-                <input id="email" type="text">
-            </form>
-            <form action="index.html" method="post">
-                <label for="message">Your Message</label>
-                <textarea id="message"></textarea>
-            </form>
-            <h3>Would you like to visit Starfish?</h3>
-            <form action="index.html" method="post">
-                <label for="yes">Yes</label>
-                <input type="radio" id="yes" name="response">
-                
-                <label for="no">No</label>
-                <input type="radio" id="no" name="response">
-
-                <label for="maybe">Maybe</label>
-                <input type="radio" id="maybe" name="response">
-            </form>
-            <button type="submit">Send</button>
-            
-        </section>
-    </fieldset>
-    <footer>© Lone Starfish.</footer>
-
-        
-    
+                <br>
+                <div>
+                    <label class="label" for="name">Your Name</label>
+                    <input class="text-field" id="name" name="name" type="text" required> 
+                </div><br>
+                <div>
+                    <label class="label" for="email">Your Email</label>
+                    <input class="text-field" id="email" name="email" type="text">
+                </div><br>
+                <div>
+                    <label class="label" for="message">Your Message</label>
+                    <textarea class="text-field text-area" id="message" name="message"></textarea>
+                </div><br>  
+                <h3>Would you like to visit Starfish?</h3>
+                <div>
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="yes" name="response">
+                    <label for="no">No</label>
+                    <input type="radio" id="no" name="response">
+                    <label for="maybe">Maybe</label>
+                    <input type="radio" id="maybe" name="response">
+                </div>  
+                <button class="submit" type="submit">Send</button>    
+            </form> 
+        </fieldset>   
+    </section>
+    <!-- Adds foorter -->
+    <footer class="footer">
+        © Lone Starfish.
+    </footer>  
 </body>
 </html>
