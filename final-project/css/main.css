@@ -1,50 +1,298 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-/* Reset Css starts */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-/* Reset Css end */
+/* My style */
+/* Mobile first Styles */
 
+body {	
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	line-height: 21px;
+	color: black;
+	padding-bottom: 10px;
+	background: white;
+}
+
+h1 {
+	font-size: 71px;
+	line-height: 98px;
+	font-weight: bold;
+	margin-left: 2px;
+}
+
+h2 {
+	font-size: 48px;
+	line-height: 1;
+	font-weight: bold;
+	color: black;
+	padding-bottom: 20px;
+	margin-left: 2px;
+}
+
+h3 {
+	font-size: 36px;
+	line-height: 1;
+	font-weight: bold;
+	margin-bottom: 0.8em;
+	color: black;
+	margin-left: 2px;
+	padding-top:20px;
+}
+
+h4 {
+	font-size: 14px;
+	line-height: 1;
+	font-weight: bold;
+	margin-bottom: 0.8em;
+	color: black;
+	margin-left: 2px;
+}
+
+p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	line-height: 21px;
+	color: black;
+}
+
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.container .logo {
+	background: #C58B22;
+	width: auto;
+}
+
+header {
+	background: #222222;
+	color: #c58b22;
+	padding: 14px;
+}
+
+.intro h1{
+	color: white;
+}
+.container nav ul li a {
+    text-decoration: none;
+	color:#c58b22;
+	font-size: 18px;
+	display: block;
+	text-align: center;
+	padding: 20px;
+	text-align: center;
+}
+
+header nav ul li.current a{
+	text-decoration: none;
+	color: #222222;
+	background: #c58b22;
+}
+
+form {
+	text-align: center;
+	width: auto;
+	height: auto;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+}
+
+.intro{
+	background-color: white;
+    background-image: url(../img/main-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    max-width: 100%;
+    height: 600px;
+    display: block;
+}
+.intro .intro-container {
+	margin-top: 6.5px;
+    position: relative;
+    top: 100px;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 463px;
+    padding-top: 70px;
+    padding-bottom: 14px;
+    padding-left: 14px;
+    padding-right: 70px;
+}
+
+.intro .intro-container p{
+	color:white;
+}
+
+.intro button{
+	font-size: 21px;
+    padding-left: 32px;
+    padding-right: 30px;
+    padding-top: 33px;
+    padding-bottom: 35px;
+    background-color: #c78c06;
+    border: none;
+    color: #000;
+    margin-top: 9px;
+}
+
+.main-banner{
+	background: rgba(0, 0, 0, 0.5);
+}
+
+button{
+	background-color: #c58b22;
+	padding: 21px;
+}
+
+.container {
+	color: #c58b22;
+	align-content: center;
+}
+
+.services {
+	padding: 10px;
+	background: blanchedalmond;
+}
+
+.services button{
+	background-color:black ;
+	color: rgb(212, 208, 208);
+}
+
+.container .section-services h2.current2 {
+	background: white;
+	padding-top: 30px;
+}
+
+.digital{
+	width: auto;
+}
+
+.container .section-aboutus{
+	width: auto;
+	background: blanchedalmond;
+	
+}
+
+.container .section-vision {
+	background-image: url(../img/vision.jpg);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	color:white;
+	
+}
+
+.section-vision h2 p{
+	color: white;
+}
+
+.container .section-contact form{
+	margin-left: 5px;
+	margin-right: 5px;
+	color: black;
+}
+	
+.container .section-contact form .text-field{
+	width: 100%;
+	border: 0px;
+	height: 25px;
+}
+	
+.container .section-contact .text-area{
+	border: 1px solid lightgrey;
+	height: 100px;
+}
+
+.form button{
+	background-color: #222222 ;
+	color: #C58B22;
+	padding: 0;
+}
+/* form config-end */
+
+
+
+footer {
+	text-decoration: none;
+	background:#222;
+	padding: 16px;
+	color: #c78b07;
+	
+}
+
+/*---- Desktop Starts ------*/
+
+@media screen and (min-width: 760px){
+	.container,
+	.grid-container {
+		width:706px;
+		margin: auto;
+	}
+
+	nav ul li a {
+		text-decoration: none;
+		color:#c58b22;
+		font-size: 18px;
+		display: flex;
+		text-align: center;
+		padding: 20px;
+	}
+
+	.section-contact .grid-container{
+		display: grid;
+		grid-template-columns: repeat(2, 2fr);
+		grid-gap: 24px;
+		padding-top: 32px;
+	}
+}
+
+@media screen and (min-width: 1200px){
+	
+	.container {
+		width: 1200px;
+		margin: 0 auto;
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	
+	.grid-container,
+	.container {
+		width: 1168px;
+		padding: 0 16px;
+	}
+	
+/*	h1 {
+		font-size: 81px;
+		line-height: 118px;
+		font-weight: bold;
+	}
+
+	h2 {
+		font-size: 54px;
+		line-height: 1;
+		font-weight: bold;
+	}
+
+	h3 {
+		font-size: 36px;
+		line-height: 1;
+		font-weight: bold;
+		margin-bottom: 0.8em;
+	}
+*/
+	.container .section-aboutus {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 16px;
+		align-items: center;
+	}
+
+	.container .section-services{
+		padding: 0;
+		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+		grid-gap: 16px;
+	}
+}
