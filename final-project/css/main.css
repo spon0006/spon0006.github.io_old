@@ -269,28 +269,26 @@ textarea{
 	background: #222;
 	color: #c78c06;
 	font-size: 20px;
-}
-.button-padding{
 	padding-top: 5px;
 }
-.hours-operation{
+
+.hours h3{
 	padding-top: 4px;
 	width: 90%;
 }
 th{
 	background-color: #ffe6ac;
 }
+
 table{
 	border-collapse: collapse;
-	width: 126%;
+	width: 100%;
 }
+
 td, th{
-	border: 1px solid black;
+	border: 1px solid #222222;
 	padding: 15px;
 	font-size: 13px;
-}
-.contact-us-h3{
-	padding-top: 4px;
 }
 
 footer{
