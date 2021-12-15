@@ -224,9 +224,9 @@ header {
 	border-bottom: 1px solid #c58b22;
 }
 
-.container .section-contact :nth-child(1){
+.hours > h3 {
 	background: white;
-	padding-top: 40px;
+	margin-top: 40px;
 }
 
 .section-contact {
@@ -234,9 +234,10 @@ header {
 	padding: 10px;
 }
 .section-contact label{
-	padding-top: 50px;
-	padding-left: 9px;
+	margin-top: 20px;
+	margin-left: 9px;
 }
+
 .section-contact label :nth-child(3){
 	padding-bottom: 10px;
 }
@@ -291,6 +292,11 @@ td, th{
 	font-size: 13px;
 }
 
+.location{
+	position: relative;
+	width: auto;
+}
+
 footer{
 	background-color: #222222;
 	color: #c58b22;
@@ -305,28 +311,230 @@ footer a{
 /*---- Desktop Starts ------*/
 
 @media screen and (min-width: 760px){
-	.container,
-	.grid-container {
-		width:706px;
-		margin: auto;
+	.header {
+        display: flex;
+        flex-direction: row;
+        width:100%;
+        align-items:center;
+    }
+
+
+    nav ul li:hover {
+        color: #222222;
+        background-color: #c58b22;
+        padding: 10px;
+    } 
+
+	.logo{
+		max-width: 100px ;	
+	}
+    
+    h1{
+        font-size: 4.7rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        line-height: 1.5;
+    }
+
+    .intro{
+        width: 100%;
+        vertical-align: top;
+        max-height: 575px;
+        object-fit: cover;
+		position: relative;
+    }
+
+	.intro .intro-container{
+        top: 10%;
+        padding: 15px;
+        max-width: 100%;
+        height: 70%;
+        left: 3rem;
+        right: 3rem;
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    .intro .intro-container p{
+            color: white;
+            font-size: 13px;
+            line-height: 1.6;
+            padding-bottom: 10px; 
+    } 
+
+    .intro .intro-container button{
+            border: none;
+            background: #c78c06;
+            padding: 2rem;
+            font-size: 2rem;
 	}
 
-	nav ul li a {
-		text-decoration: none;
-		color:#c58b22;
-		font-size: 18px;
-		display: flex;
-		text-align: center;
-		padding: 20px;
-	}
+    .section-aboutus{
+        width: 85%;
+        padding-left: 2rem;
+    }
 
-	.section-contact .grid-container{
-		display: grid;
-		grid-template-columns: repeat(2, 2fr);
-		grid-gap: 24px;
-		padding-top: 32px;
-	}
+    .section-aboutus p{
+        padding-right: 2rem;
+    }
+
+	/*GRID*/
+
+    .section-aboutus{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap:16px;
+		align-items: center;
+        grid-template-areas: 
+            "one two";
+    }
+    .section-aboutus img{
+        grid-area: one;
+    }
+    .section-aboutus h3,p{
+        grid-area: two;
+    }
+
+    /* our services */
+
+	.section-services{
+		Width:1200px;
+    	display:grid;
+    	grid-template-columns:repeat(6,1fr);
+   		background-color: rgb(245, 243, 243);
+    	grid-gap: 10px;   
 }
+
+.section-services .services-digital{
+    grid-column:1/4;
+    grid-row:1/2; 
+}
+
+.section-services .services-marketing{
+    grid-column:4/7;
+    grid-row:1/2;
+}
+
+.section-services .services-video{
+    grid-column:1/3;
+    grid-row:2/3;
+}
+
+.section-services .services-web{
+    grid-column:3/5;
+    grid-row:2/3;
+}
+
+.section-services .services-print{
+    grid-column:5/7;
+    grid-row:2/3;
+}
+
+/* our Vision */
+    .our-vision, img{
+        width: 100%;
+    }
+    .our-vision-container{
+        position: relative;
+    }
+    .our-vision-text{
+        position: relative;
+        display: block;
+        position: absolute;
+        top: 10%;
+        left: 0%;
+        padding-left: 60px;
+        padding-right: 57px;
+        color: white;
+    }
+    .vision-image{
+        position: relative;
+        max-height: 255px;
+        object-fit: cover;
+    }
+    /* Our team grid*/
+    .team{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .our-team-grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:   
+            "one two"
+            "four three";
+    }
+    .our-team-grid .our-team:nth-child(1){
+        grid-area: one;
+    }
+    .our-team-grid .our-team:nth-child(2){
+        grid-area: two;
+    }
+    .our-team-grid .our-team:nth-child(3){
+        grid-area: three;
+    }
+    .our-team-grid .our-team:nth-child(4){
+        grid-area: four;
+    }
+    .word-padding{
+        padding: 10px;
+    }
+    .team-divide{
+        border: none;
+    }
+    /* Contact us */
+    .name-email{
+        max-width: 1200px;
+    }
+    .message-box{
+        width: 100%
+    }
+    /* Contact us grid */
+    .contact-us-1{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .contact-us-grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-areas: 
+            "one three"
+            "two two" ;
+    }
+    .contact-us-grid .contact-us:nth-child(1){
+        grid-area: one;
+    }
+    .contact-us-grid .contact-us:nth-child(2){
+        grid-area: two;
+    }
+    .contact-us-grid .contact-us:nth-child(3){
+        grid-area: three;
+    }
+    input[type=text]{ 
+        width: 115%;
+     } 
+     input[type=email]{ 
+        width: 115%;
+     } 
+    .message-box{
+        width: 115%;
+        resize: none;
+        height: 150px;
+    }
+    .google-map{
+        position: relative;
+        left: 1%;
+    }
+    table{
+        border-collapse: collapse;
+        width: 129%;
+    }
+    /* Footer */
+    footer .container{
+        width: 100%;
+    }
+}   
 
 @media screen and (min-width: 1200px){
 	
