@@ -311,15 +311,34 @@ footer a{
 /*---- Desktop Starts ------*/
 
 @media screen and (min-width: 760px){
-	.header {
+	header .container {
         display: flex;
         flex-direction: row;
         width:100%;
         align-items:center;
     }
 
+    .menu {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        padding: 20px;
+    }
 
-    nav ul li:hover {
+    .search {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+
+    }
+
+    nav ul li.current a{
+        text-decoration: none;
+        color: #c58b22;
+        background: #222222;
+    }
+
+     nav ul li a:hover {
         color: #222222;
         background-color: #c58b22;
         padding: 10px;
